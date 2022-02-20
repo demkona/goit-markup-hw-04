@@ -55,7 +55,8 @@ img {
   text-align: center;
   color: var(--secondary-text-color);
 }
-/* .visually-hidden {
+
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -65,8 +66,8 @@ img {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;  */
-
+  overflow: hidden;
+}
 /* header*/
 
 .header-container {
@@ -83,7 +84,6 @@ img {
 .nav-list {
   display: flex;
 }
-
 .logo,
 .logo-black {
   margin-right: 93px;
@@ -129,6 +129,24 @@ img {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
+.contact-list {
+  display: flex;
+}
+.contact-link {
+  display: flex;
+  text-align: center;
+  color: inherit;
+  fill: currentColor;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--primary-color-accent);
+}
+
+.contact-link-icon {
+  margin-right: 10px;
+}
+
 /* hero */
 .hero {
   padding-top: 200px;
@@ -208,6 +226,17 @@ img {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
+
+.features-list-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background: var(--secondary-color-bg);
+  border-radius: 4px;
+}
 /* make-section */
 .make-list {
   display: flex;
@@ -255,7 +284,26 @@ img {
 }
 .team-info {
   padding-top: 30px;
+  padding-bottom: 16px;
+}
+.team-list-icon {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.team-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  right: 44px;
+  fill: var(--primary-color-bg);
+}
+.team-link-icon:hover,
+.team-link-icon:focus {
+  background: var(--primary-color-accent);
 }
 /* footer */
 .logo-white {
