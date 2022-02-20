@@ -7,6 +7,7 @@
   --secondary-color-bg: #f5f4fa;
   --color-bg: #2f303a;
   --secondary-color-btn: #188ce8;
+  --primary-color-icon: #afb1b8;
 }
 body {
   font-weight: 400;
@@ -115,6 +116,7 @@ img {
   margin-right: 50px;
 }
 .contact-link {
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -298,14 +300,64 @@ img {
   justify-content: center;
   align-items: center;
   width: 44px;
-  right: 44px;
+  height: 44px;
   fill: var(--primary-color-bg);
 }
 .team-link-icon:hover,
 .team-link-icon:focus {
-  background: var(--primary-color-accent);
+  background-color: var(--primary-color-accent);
+  border-radius: 50%;
+}
+.team-link-icon:hover .team-icon,
+.team-link-icon:focus .team-icon {
+  fill: var(--primary-color-bg);
+}
+
+.team-icon {
+  fill: var(--primary-color-icon);
+}
+/* client */
+
+.client-section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.clients-item {
+  width: calc((100% - 150px) / 6);
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--primary-color-icon);
+  border-radius: 4px;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--primary-color-accent);
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--primary-color-accent);
+}
+
+.client-icon {
+  fill: var(--primary-color-icon);
 }
 /* footer */
+.footer-section {
+display: flex;
+}
 .logo-white {
   color: var(--color-text);
 }
@@ -338,7 +390,40 @@ img {
 .address-contact-item {
   margin-top: 9px;
 }
-
+.footer-social-title{
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--color-text)
+}
+.footer-list-icon{
+  display: flex;
+}
+.footer-list-icon :not(:last-child){
+margin-right: 10px;
+}
+.footer-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--primary-bg-color);
+}
+.footer-item-icon:hover,
+.footer-item-icon:focus{
+  background-color:var(--primary-color-accent);
+  fill: var(--primary-color-bg);
+}
+.footer-item-icon:hover .footer-icon,
+.footer-item-icon:focus .footer-icon{
+fill: var(--primary-color-bg);
+}
 /* portfolio.html */
 /* button */
 .portfolio {
