@@ -72,8 +72,6 @@ img {
 /* header*/
 
 .header-container {
-  padding-top: 25px;
-  padding-bottom: 25px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -137,18 +135,15 @@ img {
 .contact-link {
   display: flex;
   text-align: center;
-  color: inherit;
-  fill: currentColor;
 }
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--primary-color-accent);
-}
-
 .contact-link-icon {
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
-
+.contact-link:hover .contact-link-icon,
+.contact-link:focus .contact-link-icon {
+  fill: var(--primary-color-accent);
+}
 /* hero */
 .hero {
   padding-top: 200px;
@@ -259,6 +254,7 @@ img {
   flex-basis: calc((100% - 90px) / 4);
 }
 .team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-color-bg);
 }
@@ -355,9 +351,6 @@ img {
   fill: var(--primary-color-icon);
 }
 /* footer */
-.footer-section {
-display: flex;
-}
 .logo-white {
   color: var(--color-text);
 }
@@ -365,6 +358,13 @@ display: flex;
   background: var(--color-bg);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-container{
+display: flex;
+align-items: baseline;
+}
+.footer-address{
+  margin-right: 70px;
 }
 .address-list {
   margin-top: 20px;
@@ -413,16 +413,14 @@ margin-right: 10px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: var(--primary-bg-color);
+  
 }
 .footer-item-icon:hover,
 .footer-item-icon:focus{
   background-color:var(--primary-color-accent);
-  fill: var(--primary-color-bg);
 }
-.footer-item-icon:hover .footer-icon,
-.footer-item-icon:focus .footer-icon{
-fill: var(--primary-color-bg);
+.footer-icon{
+  fill: var(--primary-color-bg);
 }
 /* portfolio.html */
 /* button */
@@ -490,4 +488,9 @@ fill: var(--primary-color-bg);
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.portfolio-card-item:hover,
+.portfolio-card-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
